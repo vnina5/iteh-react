@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 
 function DodajNovuIgricu({ handleDodaj, duzinaNiza }) {
@@ -78,19 +77,6 @@ function DodajNovuIgricu({ handleDodaj, duzinaNiza }) {
               onInput={handleInput}
             />
           </div>
-          {/* <div className="grupa">
-            <label htmlFor="cena" className="lbl">
-              Cena
-            </label>
-            <input
-              type="text"
-              name="cena"
-              className="input--style-3 inpt-2"
-              placeholder=""
-              required
-              onInput={handleInput}
-            />
-          </div> */}
           <div className="grupa">
             <label htmlFor="slika" className="lbl">
               Slika

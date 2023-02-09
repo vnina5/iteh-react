@@ -1,13 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {
-  FaPencilAlt,
-  FaTrashAlt,
-  FaCartPlus,
-  FaRegStar,
-  FaStar,
-  FaWindowClose,
-} from "react-icons/fa";
+import { FaTrashAlt, FaRegStar, FaStar } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 
 const GameCard = ({ proizvod, addFavorite, removeFavorite, inFav }) => {
@@ -27,9 +20,6 @@ const GameCard = ({ proizvod, addFavorite, removeFavorite, inFav }) => {
         <br />
         <p className="opis">{proizvod.opis}</p>
         <br />
-        {/* <p className="cena">
-          <strong>$ {proizvod.cena}</strong>
-        </p> */}
         <div>
           {!inFav ? (
             <>

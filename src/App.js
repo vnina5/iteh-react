@@ -97,7 +97,7 @@ function App() {
     niz.forEach((i) => {
       if (i.id === id) {
         i.favorite = true;
-        console.log("favoriteee " + id);
+        // console.log("favoriteee " + id);
       }
     });
     refreshFav();
@@ -107,7 +107,7 @@ function App() {
     niz.forEach((i) => {
       if (i.id === id) {
         i.favorite = false;
-        console.log("nijee favoriteee " + id);
+        // console.log("nijee favoriteee " + id);
       }
     });
     refreshFav();

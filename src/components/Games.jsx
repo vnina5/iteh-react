@@ -6,15 +6,15 @@ function Games({ proizvodi, addFavorite }) {
   const [sortiranje, setSortiranje] = useState("none");
 
   function handleSort(e) {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     setSortiranje(e.target.value);
   }
 
   return (
     <>
       <div className="sortiranje">
-        <label htmlFor="cena">Sortiranje: </label>
-        <select name="cena" id="cena" className="sort" onChange={handleSort}>
+        <label htmlFor="sort">Sortiranje: </label>
+        <select name="sort" id="sort" className="sort" onChange={handleSort}>
           <option value="none">Podrazumevano</option>
           <option value="asc">A - Z</option>
           <option value="desc">Z - A</option>
@@ -41,6 +41,7 @@ function Games({ proizvodi, addFavorite }) {
                   proizvod={prod}
                   key={prod.id}
                   addFavorite={addFavorite}
+                  inFav={false}
                 />
               ))
           : proizvodi.map((prod) => (
@@ -48,6 +49,7 @@ function Games({ proizvodi, addFavorite }) {
                 proizvod={prod}
                 key={prod.id}
                 addFavorite={addFavorite}
+                inFav={false}
               />
             ))}
       </div>
