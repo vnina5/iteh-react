@@ -49,16 +49,18 @@ body {
 }
 
 .footer {
-  /* position: static; */
-  /* bottom: 0; */
-  /* top: 90%; */
-  /* height: 100px; */
-  /* width: 100%; */
+  position: sticky;
+  top: 100vh;
   z-index: 0;
   background-color: #141029;
   color: #fff;
-  position: sticky;
-  top: 100vh;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.love:hover {
+  color: red;
 }
 
 /* KARTICE */
@@ -100,22 +102,22 @@ body {
 }
 
 .pink {
-  background-color: #c70b96;
+  background-color: #e40eab;
   color: #fff;
 }
 
 .pink:hover {
-  background-color: #c70b96aa;
+  background-color: #e40eabaa;
   color: #fff;
 }
 
 .purple {
-  background-color: #9228b8;
+  background-color: #9f2ec9;
   color: #000;
 }
 
 .purple:hover {
-  background-color: #9228b8aa;
+  background-color: #9f2ec9aa;
   color: #fff;
 }
 
@@ -164,7 +166,7 @@ body {
 .naslov-fav {
   text-align: center;
   font-weight: bolder;
-  color: #c70b96;
+  color: #b50486;
   margin: 20px;
 }
 
@@ -174,7 +176,7 @@ body {
   margin: 20px 15%;
   position: relative;
   display: block;
-  background-color: #c70b96;
+  background-color: #b50486;
 }
 
 .cont-black {
