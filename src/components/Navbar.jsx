@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../img/logo.jpg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-custom" id="header">
-      <a className="navbar-brand" href="">
+      <Link to="/" className="navbar-brand">
         <img
           src={logo}
           width="auto"
@@ -13,14 +14,17 @@ function Navbar() {
           alt=""
         ></img>
         <strong>Igrice</strong>
-      </a>
+      </Link>
       <div>
-        <a className="nav-link" href="">
+        <Link to="/" className="nav-link">
           Pocetna
-        </a>
-        <a className="nav-link" href="">
+        </Link>
+        <Link to="/omiljeno" className="nav-link">
+          Omiljene igre
+        </Link>
+        <Link to="/novaigra" className="nav-link">
           Dodaj novu igru
-        </a>
+        </Link>
       </div>
     </nav>
   );
